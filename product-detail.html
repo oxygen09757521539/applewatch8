@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product-detail1.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container flex">
+            <div class="left">
+                <div class="main-image">
+                    <img src="image2/p0.jpg" alt="" class="slide">
+                </div>
+                <div class="option flex">
+                    <img src="image2/p1.jpg" onclick="img('image2/p1.jpg')">
+                    <img src="image2/p2.jpg" onclick="img('image2/p2.jpg')">
+                    <img src="image2/p3.jpg" onclick="img('image2/p3.jpg')">
+                    <img src="image2/p4.png" onclick="img('image2/p4.png')">
+                    <img src="image2/p5.jpg" onclick="img('image2/p5.jpg')">
+                    <img src="image2/p6.jpg" onclick="img('image2/p6.jpg')">
+                    
+                </div>
+            </div>
+            <div class="right">
+                <h3>Apple Watch Series 8</h3>
+                <h4><small>$</small>999.99</h4>
+                <p>Smooth and seamless. The edge of design. Apple Watch Series 8 features a big, brilliant Always‑On display. Narrow borders push the screen right to the edge, resulting in an elegant integration with the curvature of the case.</p>
+                <!-- <h5>Color-White</h5> -->
+                <!-- <div class="color flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+                <!-- <h5>Number</h5>
+                <div class="add flex1">
+                    <span>-</span>
+                    <label>1</label>
+                    <span>+</span> 
+                </div> -->
+                <button>Add To Bag</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function img(anything){
+            document.querySelector('.slide').src = anything;
+
+        }
+        function change(change){
+            const line = document.querySelector('.home');
+            line.style.bacground = change;
+        }
+    </script>
+</body>
+</html>
